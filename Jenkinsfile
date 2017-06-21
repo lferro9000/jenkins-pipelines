@@ -4,6 +4,6 @@ stage "Checkout"
 stage "Composer"
   sh 'composer install'
 stage "Build"
-  sh 'bin/vendor/phpunit'
-  sh 'bin/vendor/behat'
+  sh './bin/vendor/phpunit'
+  sh './bin/vendor/behat'
 }
